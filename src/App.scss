@@ -1,0 +1,23 @@
+$primary_color: rgb(2, 103, 100);
+
+@mixin sm-size {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin md-size {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin lg-size {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+@import './components/Navbar/navbar';
+@import './components/Footer/footer';
+@import './components/FoodCard/food_card';

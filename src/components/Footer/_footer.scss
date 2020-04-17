@@ -1,0 +1,158 @@
+$footer_text_color: #a5a5a5;
+$footer_text_hover_color: #04cbc5;
+
+.footer {
+    .footer-link {
+        color: $footer_text_color;
+        transition: 0.6s ease-in-out;
+
+        &:hover {
+            color: $footer_text_hover_color;
+        }
+    }
+
+    .footer-foods-svg {
+        height: 60px;
+        position: absolute;
+        top: -29px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            width: 560px;
+        }
+    }
+
+    .footer-navbar {
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #464646;
+        margin-bottom: 30px !important;
+        padding: 0;
+
+        @include sm-size {
+            flex-direction: column;
+        }
+
+        .application-links {
+            a {
+                display: inline-block;
+                margin: 0 10px 5px 0;
+
+                img {
+                    width: 150px;
+                }
+            }
+        }
+
+        .navbar-links {
+
+            .link {
+                color: $footer_text_color;
+                display: inline-block;
+                padding: 20px 10px;
+                border-bottom: 2px solid transparent;
+                transition: 0.5s ease-in-out;
+
+                &:hover {
+                    color: $footer_text_hover_color;
+                    border-bottom: 2px solid $footer_text_hover_color;
+                }
+            }
+        }
+    }
+
+    .middle-section {
+        border-bottom: 1px solid #464646;
+
+        .guide-menu-item {
+            vertical-align: top;
+            position: relative;
+            width: 22%;
+            margin: 20px 0;
+            padding: 0 20px 0 0;
+            min-height: 77px;
+            color: white;
+
+            @include md-size {
+                width: 50%;
+            }
+
+            @include sm-size {
+                text-align: center;
+                width: 100%;
+            }
+
+            .company-logo {
+                width: 120px;
+            }
+
+            .powered-by {
+                position: absolute;
+                top: -13px;
+                left: 30px;
+                font-size: 0.8rem;
+                color: $footer_text_color;
+
+                @include sm-size {
+                    left: 50%;
+                    transform: translateX(-60%);
+                }
+            }
+
+            .title {
+                font-size: 20px;
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+
+            .menu-link {
+                display: block;
+                padding: 4px 0;
+                text-transform: capitalize;
+            }
+        }
+
+
+    }
+
+    .bottom-section {
+        padding-top: 30px;
+
+        .text-section {
+            margin: 20px 0 30px;
+            color: #d7d7d7;
+            font-weight: 500;
+
+            .dark-text {
+                color: $footer_text_color;
+                font-weight: normal;
+            }
+        }
+
+        .links-container {
+            @include sm-size() {
+                flex-direction: column;
+            }
+
+            .copy-right {
+                color: $footer_text_color;
+            }
+
+            .socials-section {
+                .link {
+                    color: $footer_text_color;
+                    display: inline-block;
+                    padding: 12px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
